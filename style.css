@@ -1,3 +1,39 @@
-h2 {
-  color: blue;
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding-left: 20px; /* Optional: space from left edge */
+}
+
+.site-name {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 40px; /* Space between name and menu */
+  letter-spacing: 1px;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav li:hover {
+  background-color: #ddd;
+  color: #333;
 }
